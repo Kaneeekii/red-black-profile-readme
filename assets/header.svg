@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Bannière animée rouge et noir">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d0000"><animate attributeName="stop-color" values="#0d0000;#2a0000;#0d0000" dur="6s" repeatCount="indefinite"/></stop>
+      <stop offset="0.55" stop-color="#5c0000"><animate attributeName="offset" values="0.4;0.7;0.4" dur="6s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#8B0000"><animate attributeName="stop-color" values="#8B0000;#b00000;#8B0000" dur="6s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <linearGradient id="streak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff3b3b" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ff3b3b" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ff3b3b" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="220" fill="url(#bg)"/>
+  <rect y="0" width="260" height="220" fill="url(#streak)" transform="skewX(-20)">
+    <animate attributeName="x" values="-400;1400" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="600" y="108" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="68" font-weight="700" fill="#ffffff" filter="url(#glow)">TON PSEUDO
+    <animate attributeName="opacity" values="0.88;1;0.88" dur="3s" repeatCount="indefinite"/>
+  </text>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#ffd6d6" text-anchor="middle" letter-spacing="2">
+    <text x="600" y="160" opacity="0">Développeur
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.28;0.34;1" dur="9s" begin="0s" repeatCount="indefinite"/></text>
+    <text x="600" y="160" opacity="0">Créateur de mods &amp; jeux
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.28;0.34;1" dur="9s" begin="3s" repeatCount="indefinite"/></text>
+    <text x="600" y="160" opacity="0">Toujours en train d'apprendre
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.28;0.34;1" dur="9s" begin="6s" repeatCount="indefinite"/></text>
+  </g>
+</svg>
